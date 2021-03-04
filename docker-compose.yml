@@ -1,6 +1,6 @@
 version: "2.0"
 services:
- node-adeel-vuesecond:
+ vue-new-app:
   build:
    context: .
    dockerfile: ./Dockerfile
@@ -10,3 +10,4 @@ services:
   -   ./vue.config.js:/usr/src/app/vue.config.js
   ports:
   -  "80:8080"
+  -  "3000:3000"

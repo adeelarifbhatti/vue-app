@@ -4,7 +4,7 @@
 
 <style>
 body {
-  background: red;
+  background: white;
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
