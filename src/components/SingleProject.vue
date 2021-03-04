@@ -60,7 +60,7 @@ export default {
     box-shadow: .8rem .5rem 1rem rgba(0, 0, 0, .5);
     border-left: .8rem solid rgba(243, 63, 63, 0.384);
 }
-.complete {
+.project.complete {
         border-left: .8rem solid rgba(140, 233, 52, 0.986);
 
 }
