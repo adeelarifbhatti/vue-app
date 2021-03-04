@@ -30,11 +30,13 @@ export default {
             this.showDetails=!this.showDetails;
             console.log("Showing Details");
         },
-        deleteProject() {
-            fetch(this.uri, {method: 'DELETE'});
-            console.log("Deleting Project");
 
-        }
+        deleteProject() {
+            fetch(this.uri, {method: 'DELETE'})
+                .then(()=> this.$emit('delete',this.project.id))
+                .then(console.log("Deleting Project"))
+                    .catch(err => console.log(err));  
+        }    
     }
 
 }
