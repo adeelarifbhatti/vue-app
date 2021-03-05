@@ -5,12 +5,12 @@
                 {{project.title}} 
             </h3>
             <div class="icons">
+                <router-link :to="{name: 'EditProject', params: {id: project.id}}">
+                    <span  class="material-icons">edit</span> 
+                </router-link>
                 <span @click="doneProject" class="material-icons">done_all</span> 
-                <span class="material-icons">edit</span> 
                 <span @click="deleteProject" class="material-icons">delete</span> 
-            </div>
-
-     
+            </div>     
         </div>      
     </div>
 
