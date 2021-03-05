@@ -24,7 +24,8 @@ export default {
       }
     },  
   mounted() {
-    fetch("http://mol.uio.no:3000/projects")
+    console.log("ADEEL JEE",process.env.VUE_APP_URL);
+    fetch(process.env.VUE_APP_URL)
     .then(res => res.json())
     .then(data => this.projects = data)
     .then(adeel => {console.log("ADEEL TEST LOG",adeel);})

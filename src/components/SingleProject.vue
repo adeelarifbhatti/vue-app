@@ -33,7 +33,7 @@ export default {
     data() {
         return {
              showDetails: false,
-             uri: 'http://mol.uio.no:3000/projects/'+this.project.id
+             uri: process.env.VUE_APP_URL+'/'+this.project.id
         }
     },
     methods: {

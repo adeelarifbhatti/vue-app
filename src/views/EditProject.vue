@@ -18,7 +18,7 @@ export default {
         return {
             title: '',
             details:'',
-            uri: 'http://mol.uio.no:3000/projects/'+this.id
+            uri: process.env.VUE_APP_URL+'/'+this.id
         }
     },
     methods: {
