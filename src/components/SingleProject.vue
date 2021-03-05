@@ -16,6 +16,7 @@
 
     <div class="details" v-if="showDetails">
                 <div class="project-details">
+                    <h3> Project Details </h3>
                     {{project.details}}
                     <button class="btn-close" @click="showDetailAction">close</button> 
                 </div>
@@ -80,12 +81,13 @@ export default {
 }
 .project-details{
     position: absolute;
-    font-size: 3rem;
+    font-size: 1rem;
+    overflow: hidden;
     top:40%;
     left:50%;
     padding: 3rem;
-    width: auto;
-    height: auto;
+    width: 70%;
+    height: 70%;
     background-color: rgb(223, 209, 209);
     box-shadow: 0 2rem 4rem rgba(rgb(245, 232, 234),.2);
     border-radius: 3px;
