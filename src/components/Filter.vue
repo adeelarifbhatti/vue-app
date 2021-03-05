@@ -28,13 +28,16 @@ export default {
 </script>
 
 <style>
-
+.filter {
+    margin-left: 10rem;
+}
 .btn-filter{ 
     text-transform: uppercase;
+    font-size: 1.3rem;
     text-decoration: none;
     margin-bottom: .7rem;
     margin-top: .1rem;
-    margin-right: .5rem;
+    margin-right: 2rem;
     padding: .1rem 1rem;
     display: inline-block;
     border-radius: .5rem;
@@ -43,7 +46,7 @@ export default {
     color: rgb(24, 22, 19);
     }
 .filter button.active {
-    color: rgb(149, 226, 123);
+    background-color: rgba(178, 168, 231, 0.822);
         border-radius: 0rem;
 }
 

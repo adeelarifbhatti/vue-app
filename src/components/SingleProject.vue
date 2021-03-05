@@ -21,7 +21,7 @@
                     <button class="btn-close" @click="showDetailAction">close</button> 
                 </div>
 
-    </div>                            
+    </div>                        
 
 
 </template>
@@ -64,9 +64,11 @@ export default {
 
 <style>
 .project {
-    margin: .2rem auto;
-        background: rgba(192, 174, 174, 0.288);
-    padding: 1rem 1rem 0rem 2rem;
+    margin-right: 10rem;
+    margin-left: 10rem;
+    margin-bottom: 2rem;
+    background: rgba(195, 219, 126, 0.5);
+    padding: .5rem .5rem .5rem .5rem;
     border-radius: .4rem;
     box-shadow: .8rem .5rem 1rem rgba(0, 0, 0, .5);
     border-left: .8rem solid rgba(243, 63, 63, 0.384);
@@ -74,7 +76,7 @@ export default {
 .details{
     height: 100vh;
     width: 100%;
-    background: rgba(0,0,0,.5);
+    background: rgba(65, 171, 197, 0.5);
     position: fixed;
     top:0;
     left:0;
@@ -88,8 +90,8 @@ export default {
     padding: 3rem;
     width: 70%;
     height: 70%;
-    background-color: rgb(223, 209, 209);
-    box-shadow: 0 2rem 4rem rgba(rgb(245, 232, 234),.2);
+    background-color: rgba(21, 72, 211, 0.37);
+    box-shadow: 0 2rem 4rem rgba(rgb(70, 55, 57),.2);
     border-radius: 3px;
     text-align: center;
     opacity: 1;
@@ -119,12 +121,11 @@ h3 {
 }
 .btn-close {
    position: absolute;
-   background-color: rgb(202, 202, 241);
+   background-color: rgb(165, 165, 192);
    top: 1rem;
    right: 1rem;
  border: .1rem solid black;
 }
-
 
 
 </style>

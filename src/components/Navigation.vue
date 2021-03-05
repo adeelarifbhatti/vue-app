@@ -25,10 +25,11 @@ export default {
 
 }
 .navigation{
-    margin: 3rem auto;
+    margin: 1rem auto;
+    margin-bottom: 2rem;
     padding: 1rem 2rem;
     border-radius: 8%;
-    background: rgba(192, 174, 174, 0.288);
+    background: rgba(77, 223, 223, 0.589);
     border-style: double;
 }
 

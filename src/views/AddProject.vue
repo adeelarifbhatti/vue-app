@@ -53,9 +53,10 @@ export default {
     }
 .form { 
         margin: .2rem auto;
-        background: rgba(192, 174, 174, 0.288);
-        border-radius: 1rem;
-        padding: 9rem;
+         background-color: #bbdaf3;
+        border-radius: .5rem;
+        padding: 3rem;
+        clip-path: polygon(0% 10%, 100% 0, 100% 100%, 0% 93%);
     }
 .input {
     font-size: 1.1rem;
@@ -63,9 +64,9 @@ export default {
     padding: .5rem .2rem;
     border-radius: .5rem;
     background: rgba(168, 145, 145, 0.192);
-    background-color: rbga(rgb(170, 131, 131), .5);
+    background-color: rbga(rgb(55, 99, 105), .5);
     border: none;
-    border: .2rem solid rgba(194, 184, 184, 0.589);
+    border: .2rem solid rgba(46, 92, 122, 0.747);
     width: 80%;
     display: block;
 }
