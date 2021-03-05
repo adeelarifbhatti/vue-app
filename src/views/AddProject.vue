@@ -52,7 +52,7 @@ export default {
     color: rgb(24, 22, 19);
     }
 .form { 
-        margin-top: 5rem;
+        margin: .2rem auto;
         background: rgba(192, 174, 174, 0.288);
         border-radius: 1rem;
         padding: 9rem;

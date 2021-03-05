@@ -1,24 +1,34 @@
 <template>
-  <div class="project" :class="{complete: project.complete}">
-      <div class="actions" >
-          <h3 @click="showDetailAction()"> {{project.title}} </h3>
-
-        <div class="details" v-if="showDetails">
-           <p> {{project.details}} </p>
-        </div>
+    <div id="projects" class="project" :class="{complete: project.complete}">
+        <div class="actions" >
+            <h3 @click="showDetailAction()"> 
+                {{project.title}} 
+            </h3>
             <div class="icons">
                 <span @click="doneProject" class="material-icons">done_all</span> 
                 <span class="material-icons">edit</span> 
                 <span @click="deleteProject" class="material-icons">delete</span> 
             </div>
 
-      </div>
-  </div>
+     
+        </div>      
+    </div>
+
+    <div class="details" v-if="showDetails">
+                <div class="project-details">
+                    {{project.details}}
+                    <button class="btn-close" @click="showDetailAction">close</button> 
+                </div>
+
+    </div>                            
+
+
 </template>
 
 <script>
 export default {
     props: ['project'],
+    emits: ['complete', 'delete'],
     data() {
         return {
              showDetails: false,
@@ -53,13 +63,37 @@ export default {
 
 <style>
 .project {
-    margin: 2rem auto;
-    background: rgb(216, 213, 213);
-    padding: 1rem 2rem;
+    margin: .2rem auto;
+        background: rgba(192, 174, 174, 0.288);
+    padding: 1rem 1rem 0rem 2rem;
     border-radius: .4rem;
     box-shadow: .8rem .5rem 1rem rgba(0, 0, 0, .5);
     border-left: .8rem solid rgba(243, 63, 63, 0.384);
 }
+.details{
+    height: 100vh;
+    width: 100%;
+    background: rgba(0,0,0,.5);
+    position: fixed;
+    top:0;
+    left:0;
+}
+.project-details{
+    position: absolute;
+    font-size: 3rem;
+    top:40%;
+    left:50%;
+    padding: 3rem;
+    width: auto;
+    height: auto;
+    background-color: rgb(223, 209, 209);
+    box-shadow: 0 2rem 4rem rgba(rgb(245, 232, 234),.2);
+    border-radius: 3px;
+    text-align: center;
+    opacity: 1;
+    transform: translate(-50%,-50%);
+}
+
 .project.complete {
         border-left: .8rem solid rgba(140, 233, 52, 0.986);
 
@@ -81,6 +115,14 @@ h3 {
 .material-icons:hover {
     color: rgb(121, 126, 126);
 }
+.btn-close {
+   position: absolute;
+   background-color: rgb(202, 202, 241);
+   top: 1rem;
+   right: 1rem;
+ border: .1rem solid black;
+}
+
 
 
 </style>
