@@ -4,7 +4,8 @@
     &:visited {
     text-transform: uppercase;
     text-decoration: none;
-    padding: 1.5rem 4rem;
+    margin-top: 1rem;
+    padding: 1.1rem 2rem;
     display: inline-block;
     border-radius: 10rem;
     transition: all .3s;
@@ -13,7 +14,7 @@
     }
 
     &:hover {
-        transform: translateY(-3rem);
+        transform: translateY(-.2rem);
         box-shadow: 0 .2rem .9rem rgba(black, .9);
             &::after {
                 transform: scaleY(1.1) scaleX(1.1);                
@@ -21,7 +22,7 @@
             }
         }
     &:active {
-        transform: translateY(1rem);
+        transform: translateY(.1rem);
         box-shadow: 0 .4rem .1rem rgba(black, 4);
         }
     &-white {

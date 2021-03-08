@@ -3,10 +3,10 @@
       Edit Project
   </h1>
     <form class= "form" @submit.prevent="handleEdit">
-      <label class="label"> Title:</label>
-      <input class= "input" type="text" v-model="title" required>
-      <label class="label">Details:</label>
-      <textarea class="input" v-model="details" requried></textarea>
+      <label class="form__label"> Title:</label>
+      <input class= "form__input" type="text" v-model="title" required>
+      <label class="form__label">Details:</label>
+      <textarea class="form__input" v-model="details" requried></textarea>
       <button class="btn"> Update Project </button>
   </form>
 </template>
