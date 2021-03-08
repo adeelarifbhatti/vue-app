@@ -39,45 +39,82 @@ export default {
     }
 </script>
 
-<style>
+<style lang="scss">
 .btn {
+    &,
+    &:link,
+    &:visited {
     text-transform: uppercase;
     text-decoration: none;
-    margin-top: 2rem;
-    padding: .5rem 1rem;
+    padding: 1.5rem 4rem;
     display: inline-block;
-    border-radius: .9rem;
+    border-radius: 10rem;
     transition: all .3s;
-    background-color: rgba(96, 224, 84, 0.411);
-    color: rgb(24, 22, 19);
+    position: relative;
+    //  
     }
-.form { 
-        margin: .2rem auto;
-         background-color: #bbdaf3;
-        border-radius: .5rem;
-        padding: 3rem;
-        clip-path: polygon(0% 10%, 100% 0, 100% 100%, 0% 93%);
-    }
-.input {
-    font-size: 1.1rem;
-    font-family: inherit;
-    padding: .5rem .2rem;
-    border-radius: .5rem;
-    background: rgba(168, 145, 145, 0.192);
-    background-color: rbga(rgb(55, 99, 105), .5);
-    border: none;
-    border: .2rem solid rgba(46, 92, 122, 0.747);
-    width: 80%;
-    display: block;
-}
-.label {
-    font-size: 1.2rem;
-    font-weight: 10;
-    margin-left: .2rem;
-    margin-top: .7rem;
-    display: block;    
-}
 
+    &:hover {
+        transform: translateY(-3rem);
+        box-shadow: 0 .2rem .9rem rgba(black, .9);
+            &::after {
+                transform: scaleY(1.1) scaleX(1.1);                
+               // opacity: 0;            
+            }
+        }
+    &:active {
+        transform: translateY(1rem);
+        box-shadow: 0 .4rem .1rem rgba(black, 4);
+        }
+    &-white {
+        background-color:white;
+        color: #777;
+        &::after {
+            background-color:white;
+        }
+    }
+    &::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 10rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .01s;
+    }
+
+}
+.animated_button {
+    animation-name: moveUpbutton;
+    animation-duration: .9s;
+    animation-delay: .4s;
+    animation-fill-mode: backwards;
+}
+.btn-text {
+    &:link,
+    &:visited {
+        font-size: 1rem;
+        color: blue;
+        display: inline-block;
+        text-decoration: none;
+        border-bottom: 1px solid blue;
+        padding: 3px;
+        transition: all .2s;
+    }
+    &:hover {
+        background-color: blue;
+        color: white;
+        box-shadow: 0 1rem 1rem rgba(black, .15);
+        transform: translate(-2px);
+    }
+    &:active {
+        box-shadow: 0 .5rem 1rem rgba(black, .15);
+        transform: translateY(0);
+    }
+} 
 
     
 
