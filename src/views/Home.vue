@@ -7,16 +7,18 @@
           </div>
       </div>
   </div>
+    <Footer />
 </template>
 
 <script>
 import  SingleProject from '../components/SingleProject.vue'
 import  Filter from '../components/Filter.vue'
+import Footer from '../components/Footer.vue'
 
 
 export default {
   name: 'Home',
-  components: {SingleProject,Filter}, 
+  components: {SingleProject,Filter,Footer}, 
     data() {
       return {
         projects: [],

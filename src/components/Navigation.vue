@@ -22,7 +22,6 @@ export default {
     font-size: 1.4rem;
     text-decoration: none;
     color: black;
-
 }
 .navigation{
     margin: 1rem auto;
@@ -30,8 +29,7 @@ export default {
     padding: 1rem 2rem;
     border-radius: 8%;
     background: rgba(77, 223, 223, 0.589);
-    border-style: double;
-}
+    border-style: double;}
 
 
 

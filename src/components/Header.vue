@@ -1,7 +1,7 @@
 <template>
   <div class="header"> 
-    <div class="logo-box">
-       <img src="~@/assets/img/logo.png" alt="Logo" class="logo">
+    <div class="header__logo-box">
+       <img src="~@/assets/img/logo.png" alt="Logo" class="header__logo">
     </div>
   </div>
 </template>

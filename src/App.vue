@@ -1,6 +1,6 @@
 <template>
   <Header />
-  <Navigation class="slim" />
+  <Navigation />
   <router-view/>
 </template>
 
