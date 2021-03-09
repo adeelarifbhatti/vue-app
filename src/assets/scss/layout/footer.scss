@@ -6,8 +6,11 @@
     padding-bottom: 10rem;
     font-size: 1.1rem;
     border-radius: 2rem;
+    margin-right: 15rem;
+    margin-left: 15rem;
+
     &__logo {
-        width: 20rem;
+        width: 6rem;
         height: auto;
     }
     &__logo-box {
@@ -17,7 +20,7 @@
     &__copyright {
         text-transform: uppercase;
         background-color: $color-primary-darker;
-        font-size: 1.4rem;
+        font-size: 1.1rem;
         color:$color-primary;
     }
     &__navigation {
@@ -33,7 +36,7 @@
     &__item {
         display: inline-block;
         &:not(:last-child){
-            margin-right: 2rem;
+            margin-right: 1rem;
         }
         padding: 0 1rem;
     }
@@ -58,7 +61,7 @@
     &__copyright {
         text-transform: uppercase;
         background-color: $color-primary-darker;
-        font-size: 1.4rem;
+        font-size: 1.1rem;
         color:$color-primary;
 
     }
