@@ -1,9 +1,11 @@
-Vue App
-In order to run this, all you have to do is to run following command. Image is created via Dockerfile.
-
-# docker-compose up
+# Simple Vue-app with json-server (no backend)
 
 
+The frontend app has no real backend, it just queries the json-server (src/data/data.json), src/composables folder has the getposts.js and getpost.js.
 
-Just change the hostname in the .env and thats it. Afterwards run the following,
-docker-compose up
+Content of .env file is following, this is the json-server (our backend :D)
+
+process.env.VUE_APP_URL = 'http://localhost:3000/posts'
+
+To run the app, just clone it and execute following command 
+#### docker-compose up
